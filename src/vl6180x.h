@@ -34,10 +34,8 @@
  * Distributed as-is; no warranty is given.
  ******************************************************************************/
 
-#ifndef SparkFun_VL6180X_h
-#define SparkFun_VL6180X_h
-
-#include <Arduino.h>
+#ifndef BUELOWP_VL6180X_h
+#define BUELOWP_VL6180X_h
 
 #define VL6180x_FAILURE_RESET  -1
 

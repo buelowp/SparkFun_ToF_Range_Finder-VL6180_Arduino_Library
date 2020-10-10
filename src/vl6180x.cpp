@@ -26,8 +26,7 @@
  * Distributed as-is; no warranty is given.
  ******************************************************************************/
 
-#include <Wire.h>
-#include "SparkFun_VL6180X.h"
+#include "vl6180X.h"
 
 VL6180x::VL6180x(uint8_t address)
 // Initialize the Library
@@ -37,7 +36,8 @@ VL6180x::VL6180x(uint8_t address)
 }
 
 
-uint8_t VL6180x::VL6180xInit(void){
+uint8_t VL6180x::VL6180xInit(void)
+{
   uint8_t data; //for temp data storage
 
   data = VL6180x_getRegister(VL6180X_SYSTEM_FRESH_OUT_OF_RESET);
@@ -80,7 +80,8 @@ uint8_t VL6180x::VL6180xInit(void){
   return 0;
 }
 
-void VL6180x::VL6180xDefautSettings(void){
+void VL6180x::VL6180xDefautSettings(void)
+{
   //Recommended settings from datasheet
   //http://www.st.com/st-web-ui/static/active/en/resource/technical/document/application_note/DM00122600.pdf
 
