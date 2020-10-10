@@ -26,7 +26,7 @@
  * Distributed as-is; no warranty is given.
  ******************************************************************************/
 
-#include "vl6180X.h"
+#include "vl6180x.h"
 
 VL6180x::VL6180x(uint8_t address)
 // Initialize the Library
