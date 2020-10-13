@@ -133,8 +133,8 @@ uint8_t VL6180x::changeAddress(uint8_t old_address, uint8_t new_address){
    
    VL6180x_setRegister(VL6180X_I2C_SLAVE_DEVICE_ADDRESS, new_address);
    
-   _i2caddress =  VL6180x_getRegister(VL6180X_I2C_SLAVE_DEVICE_ADDRESS); 
-   return _i2caddress;
+   _i2caddress = new_address;
+   return VL6180x_getRegister(VL6180X_I2C_SLAVE_DEVICE_ADDRESS); 
 }
   
 

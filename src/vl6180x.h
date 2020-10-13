@@ -34,6 +34,8 @@
  * Distributed as-is; no warranty is given.
  ******************************************************************************/
 
+#include <Particle.h>
+
 #ifndef BUELOWP_VL6180X_h
 #define BUELOWP_VL6180X_h
 
